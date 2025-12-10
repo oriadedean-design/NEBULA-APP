@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-g" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Nebula</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#0A84FF", /* Apple iOS Blue */
+              "primary-dark": "#0077ED",
+              
+              "background-dark": "#000000", /* True Black */
+              "surface-dark": "#1C1C1E", /* Apple Dark Gray */
+              "surface-dark-elevated": "#2C2C2E",
+              
+              "border-dark": "#38383A",
+              "text-dark": "#FFFFFF",
+              "text-secondary-dark": "#8E8E93", /* Apple Gray */
+              
+              "background-light": "#F2F2F7",
+              "surface-light": "#FFFFFF",
+              "border-light": "#C6C6C8",
+              "text-light": "#000000",
+              "text-secondary-light": "#3C3C4399",
+              
+              "warning": "#FFD60A",
+              "danger": "#FF453A",
+              "success": "#32D74B"
+            },
+            fontFamily: {
+              "display": ["Spline Sans", "sans-serif"],
+              "body": ["Spline Sans", "sans-serif"],
+            },
+            borderRadius: {
+              "DEFAULT": "0.75rem",
+              "lg": "1rem",
+              "xl": "1.5rem",
+              "2xl": "2rem",
+              "3xl": "2.5rem",
+              "full": "9999px"
+            },
+            boxShadow: {
+                'glow': '0 0 20px -5px rgba(10, 132, 255, 0.4)',
+                'cinematic': '0 40px 80px -20px rgba(0, 0, 0, 0.8)',
+                'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.3)',
+            },
+            animation: {
+                'fade-in': 'fadeIn 0.5s ease-out forwards',
+                'slide-up': 'slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+                fadeIn: {
+                    '0%': { opacity: '0' },
+                    '100%': { opacity: '1' },
+                },
+                slideUp: {
+                    '0%': { transform: 'translateY(20px)', opacity: '0' },
+                    '100%': { transform: 'translateY(0)', opacity: '1' },
+                }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        min-height: 100vh;
+        overscroll-behavior-y: none;
+        background-color: #000000; /* Default to true black */
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        font-size: 24px;
+      }
+      .material-symbols-outlined.fill {
+        font-variation-settings: 'FILL' 1;
+      }
+      
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .scrollbar-hide {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+      
+      /* Smooth horizontal scrolling areas */
+      .snap-x {
+          scroll-snap-type: x mandatory;
+      }
+      .snap-center {
+          scroll-snap-align: center;
+      }
+      
+      /* Blur utilities - iOS Style */
+      .glass {
+          background: rgba(30, 30, 30, 0.60);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+      }
+      .glass-heavy {
+           background: rgba(20, 20, 20, 0.85);
+           backdrop-filter: blur(40px);
+           -webkit-backdrop-filter: blur(40px);
+      }
+      .glass-light {
+           background: rgba(255, 255, 255, 0.08);
+           backdrop-filter: blur(10px);
+           -webkit-backdrop-filter: blur(10px);
+      }
+      
+      /* Transitions */
+      .hover-scale {
+          transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+      .hover-scale:active {
+          transform: scale(0.96);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark selection:bg-primary/30 antialiased">
+    <div id="root"></div>
+  </body>
+</html>

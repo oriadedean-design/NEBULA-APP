@@ -1,0 +1,65 @@
+export const projectPhases = [
+  {
+    name: "Development",
+    tasks: [
+      "Collect and track briefs, treatments, scripts",
+      "Create shared folder structure",
+      "Draft timeline and key dates",
+      "Track funding applications or client approvals",
+      "Build early cost estimates",
+      "Log creative and legal documents",
+    ],
+  },
+  {
+    name: "Pre-Production",
+    tasks: [
+        "Break down script into locations, props, wardrobe, cast",
+        "Build shooting schedule",
+        "Confirm locations, permits, insurance, access hours, parking",
+        "Finalize crew list, contacts, rates, contracts",
+        "Manage talent bookings and signed releases",
+        "Oversee gear rentals and transport",
+        "Confirm insurance certificates",
+        "Set up catering and craft services",
+        "Schedule tech scout and pre-production meeting",
+        "Create call sheet template",
+        "Document walkie channels, production numbers, contact tree",
+        "Prepare daily production report template",
+        "Check power sources, parking, weather contingencies",
+    ],
+  },
+  {
+    name: "Production",
+    tasks: [
+        "Finalize and send call sheet by 6 p.m. prior day",
+        "Run crew call and safety meeting",
+        "Track crew sign-ins and meal breaks",
+        "Manage on-set communications",
+        "Log production reports",
+        "Handle petty cash and receipts",
+        "Oversee gear returns and location clean-up",
+        "Note pickups or reshoots needed",
+    ],
+  },
+  {
+    name: "Post-Production",
+    tasks: [
+        "Verify media backups and organize by date and scene",
+        "Transfer assets to post with folder structure and naming",
+        "Update post schedule and milestones",
+        "Track deliverables list",
+        "Collect invoices and process crew payments",
+        "Archive production paperwork",
+    ],
+  },
+  {
+    name: "Wrap and Debrief",
+    tasks: [
+        "Hold wrap meeting with producer and director",
+        "Create Lessons Learned document",
+        "Collect testimonials or BTS media",
+        "Back up final project and deliverables to archive",
+        "Send thank-you emails and finalize crew payments",
+    ],
+  },
+];

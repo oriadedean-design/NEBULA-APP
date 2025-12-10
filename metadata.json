@@ -1,0 +1,7 @@
+{
+  "name": "Nebula",
+  "description": "A free creative network where filmmakers and production professionals collaborate authentically. Create profiles, join projects, and use built-in tools for pre-production, scheduling, and creative competitions.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
